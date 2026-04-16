@@ -1,6 +1,6 @@
 void main() {
   // Simulated user intent
-  String userIntent = "check clearance";
+  String userIntent = "view schedule";
 
   // BONUS: Offline-first feature
   bool isInternetConnected = true;
@@ -8,8 +8,8 @@ void main() {
   if (!isInternetConnected) {
     print("⚠️ You are offline. Showing saved campus data...");
   } else {
-    if (userIntent == "check clearance") {
-      print("📋 You have 1 pending clearance in the Registrar's Office.");
+    if (userIntent == "view schedule") {
+      print("📅 Your next class is ITCC105 at 1:00 PM.");
     } else if (userIntent == "view grades") {
       print("📊 Your latest GPA is 1.75. Keep it up!");
     } else if (userIntent == "announcements") {
